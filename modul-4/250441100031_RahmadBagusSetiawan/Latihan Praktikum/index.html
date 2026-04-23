@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript</title>
+</head>
+<body>
+    <h1 id="judulHTML">Hello World!</h1>
+    <p class="paragraf">Belajar JavaScript 1</p>
+    <p class="paragraf">Belajar JavaScript 2</p>
+    <p class="paragraf">Belajar JavaScript 3</p>
+
+    <button id="btn" class="toggle">klik aku</button>
+
+
+
+
+
+<script>
+    console.log("JavaScript jalan")
+
+    // document.getElementById("judul")
+    // document.querySelector("#tombol")
+    // document.querySelectorAll("#tombol")
+    // document.getElementsByClassName("toggle")
+
+    let judulJS = document.getElementById("judulHTML")
+    judulJS.textContent = "Halo Semua";
+    judulJS.style.color = "Blue";
+
+    let p1 = document.querySelector(".paragraf")
+    // p1.textContent = "paragraf Pertama";
+    p1.style.color = "red";
+
+    let btnJS = document.getElementById("btn")
+    btnJS.addEventListener("mousemove", function() {
+        judulJS.textContent = "Kamu Klik Tombol";
+        judulJS.style.color= "red"
+    })
+</script>
+</body>
+</html>
